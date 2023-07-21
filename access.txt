@@ -1,0 +1,20 @@
++===================================+
+| New Account Info                  |
++===================================+
+| Domain: blesson.co
+| Ip: 195.238.120.200 (n)
+| HasCgi: y
+| UserName: blesson
+| PassWord: YE(HCWXle-RH
+| CpanelMod: jupiter
+| HomeRoot: /home
+| Quota: 1.46 GB
+| NameServer1: ns1.intercity.co.il
+| NameServer2: ns2.intercity.co.il
+| NameServer3: 
+| NameServer4: 
+| Contact Email: u.web.dev@gmail.com
+| Package: globalti_XXLpack-1500
+| Feature List: default
+| Account Enhancements: None
+| Language: en
