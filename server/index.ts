@@ -21,7 +21,7 @@ const server = http.createServer(app);
 
 
 server.listen(8080, () => {
-    console.log('server runnig on http://localhost:8080')
+    console.log('server runnig')
 })
 
 mongoose.Promise = Promise;
