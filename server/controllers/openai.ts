@@ -21,7 +21,7 @@ export const generageBlessAi = async (req: express.Request, res: express.Respons
             messages: [
                 {role: "user", content: prompt}
             ],
-            temperature: 0,
+            temperature: 1,
             max_tokens: 1024,
             top_p: 1,
             frequency_penalty: 0,

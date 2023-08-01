@@ -3,7 +3,6 @@ import express from 'express';
 import { createBless, getBlessesByWallet } from '../db/blesses';
 
 export const bless = async (req: express.Request, res: express.Response) => {
-    console.log(req);
     try {
         const { wallet, content, createdAt } = req.body;
         console.log(wallet, content, createdAt);

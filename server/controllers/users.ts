@@ -42,8 +42,32 @@ export const register = async (req: express.Request, res: express.Response) => {
         const user = await createUser({
             wallet
         });
-        return res.status(200).json(user).end();
+        return res.status(200).json({user,  mesage: 'registered'}).end();
         
+    } catch(err) {
+        console.log(err);
+        return res.sendStatus(400);
+    }
+}
+
+export const connect = async (req: express.Request, res: express.Response) => {
+    try {
+        const { wallet } = req.body;
+
+        if (!wallet) {
+            return res.sendStatus(400);
+        }
+
+        const user = await getUserByWallet(wallet);
+        
+        if (!user) {
+            register(req, res);
+
+            return;
+        } else {
+            res.status(200).json({user, mesage: 'logged in'}).end();
+        }
+
     } catch(err) {
         console.log(err);
         return res.sendStatus(400);

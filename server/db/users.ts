@@ -7,7 +7,7 @@ const UserSchema = new mongoose.Schema({
 
 export const UserModel = mongoose.model('User', UserSchema);
 
-export const getUserByWallet = (wallet: string) => UserModel.findOne({ wallet });
+export const getUserByWallet = (wallet: string) => UserModel.findOne({ wallet: wallet });
 
 export const createUser = (values: Record<string, any>) => new UserModel(values)
 .save().then((user) => user.toObject());
